@@ -57,9 +57,7 @@ async function makeGetRequest(uri, index) {
             country: (user.addresses) ? getCountryName(user.addresses[0].country) : '',
             countryCode: (user.addresses) ? user.addresses[0].country : '',
             userType: user.userType,
-            companyRelationship: user.companyRelationship,
             company: user.company,
-            organization: (user['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User']) ? user['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User'].organization : '',
             customAttribute1: (user['urn:sap:cloud:scim:schemas:extension:custom:2.0:User']) ? user['urn:sap:cloud:scim:schemas:extension:custom:2.0:User'].attributes[0].value : ''
         };
     });
