@@ -35,12 +35,12 @@ async function makeGetRequest(uri, index) {
 
     console.log("Starting loop\nTotal users: " + total + "\nItems per page: " + page + "\n");
 
-    /* for (count; count < total; count += page) {
+     for (count; count < total; count += page) {
         res = await makeGetRequest(uri, count + 1);
         users = users.concat(res.Resources);
-        console. log("Users retrieved: " + count + "/" + total);
-    } */
-    console.log('Done. Last user: ' + users[users.length -1].id);
+        console. log("Users retrieved: " + count + "/" + total + "\tLast user id: " + users[users.length -1].id);
+    } 
+    //console.log('Done. Last user: ' + users[users.length -1].id);
     //let user = users[0]
     //console.log(user['urn:ietf:params:scim:schemas:extension:enterprise:2.0:User'])
 
