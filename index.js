@@ -66,7 +66,7 @@ async function makeGetRequest(uri, index) {
     const csv = new ObjectsToCsv(data);
  
     // Save to file:
-    await csv.toDisk('./test.csv');
+    await csv.toDisk('./export-11March21.csv');
 })();
 
 var isoCountries = {
